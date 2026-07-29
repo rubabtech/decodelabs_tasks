@@ -94,7 +94,6 @@ StudySync-Project
 │   ├── package.json
 │   ├── package-lock.json
 │   ├── server.js
-│   └── studysync.db
 ├── frontend
 │   ├── index.html
 │   ├── script.js
@@ -141,11 +140,11 @@ Data remains saved after page refresh
 Data remains saved after backend restart
 Invalid routes return a 404 response
 Database CRUD operations work correctly
-Author
 
+Author:
 Rubab
 
-Internship
+Internship:
 
 DecodeLabs Full Stack Development Internship
 Batch 2026
