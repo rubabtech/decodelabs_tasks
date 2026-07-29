@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="StudySync is a responsive student study planner for managing academic tasks, schedules, and study progress."
+    >
+
+    <title>StudySync | Student Study Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a href="#home" class="logo">
+                Study<span>Sync</span>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#progress">Progress</a></li>
+            </ul>
+
+            <button
+                class="theme-button"
+                id="themeButton"
+                type="button"
+                aria-label="Change website theme"
+            >
+                🌙
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero-section" id="home">
+
+            <div class="hero-content">
+
+                <p class="section-label">
+                    Plan better. Study smarter.
+                </p>
+
+                <h1>
+                    Organize your studies with
+                    <span>StudySync</span>
+                </h1>
+
+                <p class="hero-text">
+                    Manage assignments, create a weekly schedule,
+                    and track your study progress from one simple dashboard.
+                </p>
+
+                <a href="#tasks" class="primary-button">
+                    Start Planning
+                </a>
+
+            </div>
+
+
+            <article class="focus-card">
+
+                <p>Today’s Focus</p>
+
+                <h2>Database Systems</h2>
+
+                <div class="focus-details">
+                    <span>Study Session</span>
+                    <strong>2 Hours</strong>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+
+                <small>70% completed</small>
+
+            </article>
+
+        </section>
+
+
+        <section class="content-section" id="tasks">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">Task Manager</p>
+                    <h2>Today’s Tasks</h2>
+                </div>
+
+                <p>
+                    Add your academic tasks and mark them complete
+                    when you finish them.
+                </p>
+
+            </div>
+
+
+            <div class="task-layout">
+
+                <form class="task-form" id="taskForm">
+
+                    <div class="form-group">
+
+                        <label for="taskInput">
+                            Task name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="taskInput"
+                            placeholder="For example: Prepare OS notes"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subjectInput">
+                            Subject
+                        </label>
+
+                        <select id="subjectInput">
+
+                            <option value="General">
+                                General
+                            </option>
+
+                            <option value="Programming">
+                                Programming
+                            </option>
+
+                            <option value="Database">
+                                Database
+                            </option>
+
+                            <option value="Operating Systems">
+                                Operating Systems
+                            </option>
+
+                            <option value="Mathematics">
+                                Mathematics
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button type="submit" class="primary-button">
+                        Add Task
+                    </button>
+
+                </form>
+
+
+                <div class="task-list-card">
+
+                    <div class="task-summary">
+
+                        <h3>Your Task List</h3>
+
+                        <span id="taskCount">
+                            3 tasks remaining
+                        </span>
+
+                    </div>
+
+
+                    <ul class="task-list" id="taskList">
+
+                        <li class="task-item">
+
+                            <button
+                                class="complete-button"
+                                type="button"
+                                aria-label="Mark task as complete"
+                            >
+                                ✓
+                            </button>
+
+                            <div class="task-details">
+                                <h4>Complete database assignment</h4>
+                                <span>Database</span>
+                            </div>
+
+                            <button
+                                class="delete-button"
+                                type="button"
+                                aria-label="Delete task"
+                            >
+                                ×
+                            </button>
+
+                        </li>
+
+
+                        <li class="task-item">
+
+                            <button
+                                class="complete-button"
+                                type="button"
+                                aria-label="Mark task as complete"
+                            >
+                                ✓
+                            </button>
+
+                            <div class="task-details">
+                                <h4>Practice JavaScript</h4>
+                                <span>Programming</span>
+                            </div>
+
+                            <button
+                                class="delete-button"
+                                type="button"
+                                aria-label="Delete task"
+                            >
+                                ×
+                            </button>
+
+                        </li>
+
+
+                        <li class="task-item">
+
+                            <button
+                                class="complete-button"
+                                type="button"
+                                aria-label="Mark task as complete"
+                            >
+                                ✓
+                            </button>
+
+                            <div class="task-details">
+                                <h4>Revise operating system concepts</h4>
+                                <span>Operating Systems</span>
+                            </div>
+
+                            <button
+                                class="delete-button"
+                                type="button"
+                                aria-label="Delete task"
+                            >
+                                ×
+                            </button>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section
+            class="content-section schedule-section"
+            id="schedule"
+        >
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">Weekly Plan</p>
+                    <h2>Study Schedule</h2>
+                </div>
+
+                <p>
+                    Divide your week into focused and manageable
+                    study sessions.
+                </p>
+
+            </div>
+
+
+            <div class="schedule-grid">
+
+                <article class="schedule-card">
+                    <span>Monday</span>
+                    <h3>Web Development</h3>
+                    <p>HTML and CSS practice</p>
+                    <time>4:00 PM – 6:00 PM</time>
+                </article>
+
+                <article class="schedule-card">
+                    <span>Tuesday</span>
+                    <h3>Database Systems</h3>
+                    <p>SQL queries and normalization</p>
+                    <time>5:00 PM – 7:00 PM</time>
+                </article>
+
+                <article class="schedule-card">
+                    <span>Wednesday</span>
+                    <h3>Operating Systems</h3>
+                    <p>Processes and scheduling</p>
+                    <time>3:00 PM – 5:00 PM</time>
+                </article>
+
+                <article class="schedule-card">
+                    <span>Thursday</span>
+                    <h3>Programming</h3>
+                    <p>JavaScript problem solving</p>
+                    <time>4:00 PM – 6:00 PM</time>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="content-section" id="progress">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">Performance</p>
+                    <h2>Study Progress</h2>
+                </div>
+
+                <p>
+                    Review your activity and stay motivated
+                    throughout the week.
+                </p>
+
+            </div>
+
+
+            <div class="progress-grid">
+
+                <article class="progress-card">
+                    <span>Completed Tasks</span>
+                    <strong id="completedTasks">0</strong>
+                    <p>Tasks completed today</p>
+                </article>
+
+                <article class="progress-card">
+                    <span>Study Hours</span>
+                    <strong>12</strong>
+                    <p>Hours studied this week</p>
+                </article>
+
+                <article class="progress-card">
+                    <span>Weekly Goal</span>
+                    <strong>75%</strong>
+                    <p>Keep going—you are doing well</p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div>
+
+            <a href="#home" class="logo">
+                Study<span>Sync</span>
+            </a>
+
+            <p>
+                A responsive student study planner created for
+                the DecodeLabs Full Stack Development internship.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 StudySync. Built by Rubab.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
